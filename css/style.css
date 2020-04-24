@@ -8,6 +8,17 @@ top: 50%;
 transform: translate(-50%, -50%);
 }
 
+.title-container {
+position: relative;
+display: flex;
+align-items: center;
+justify-content: center;
+left: 50%;
+top: 10%;
+transform: translate(-50%, -50%);
+margin-top: 50px;
+}
+
 audio
 {
 /* margin: 0px 1000px 0px 1000px 50px; */
