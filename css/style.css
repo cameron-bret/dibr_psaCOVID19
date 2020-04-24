@@ -19,6 +19,17 @@ transform: translate(-50%, -50%);
 margin-top: 50px;
 }
 
+.description-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* left: 50%;
+  top: 50%; */
+  /* transform: translate(-50%, -50%); */
+  margin: 0px 400px 25px 400px;
+  }
+
 audio
 {
 /* margin: 0px 1000px 0px 1000px 50px; */
