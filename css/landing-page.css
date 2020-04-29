@@ -67,8 +67,8 @@ header.masthead h1 {
 }
 
 .features-icons {
-  padding-top: 7rem;
-  padding-bottom: 2rem;
+  padding-top: 4rem;
+  /* padding-bottom: 1rem; */
 }
 
 .features-icons .features-icons-item {
