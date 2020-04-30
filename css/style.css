@@ -93,3 +93,8 @@ td, th {
 [data-toggle="toggle"] {
 	display: none;
 }
+
+.nopadding {
+  padding: 0 !important;
+  margin: 0 !important;
+}
