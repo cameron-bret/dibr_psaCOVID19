@@ -98,3 +98,19 @@ td, th {
   padding: 0 !important;
   margin: 0 !important;
 }
+
+.hide {
+  display: none;
+}
+
+
+
+    .fa-arrow-down{
+      transform: rotate(0deg);
+      transition: transform .3s linear;
+    }
+    
+    .fa-arrow-down.open{
+      transform: rotate(180deg);
+      transition: transform .3s linear;
+    }
