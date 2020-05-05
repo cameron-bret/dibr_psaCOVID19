@@ -120,3 +120,8 @@ td, th {
       transform: rotate(180deg);
       transition: transform .3s linear;
     }
+
+footer
+{
+  background-color: #003468 !important;
+}
