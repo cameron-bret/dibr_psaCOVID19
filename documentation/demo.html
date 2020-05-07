@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<title>JQuery Accordion</title>
+		
+		<link href="css/jquery-accordion.css" rel="stylesheet">
+		<style>
+			body{
+				background: #fff url(img/back.png) repeat;
+			}
+			.content{
+				margin: 30px auto;
+				width: 60%;
+			}
+			.panel{
+				margin: 0 auto;
+				width: 90%;
+			}
+			.colors{
+				display: inline-block;
+				list-style: none;
+			}
+			.colors li{
+				margin: 20px 0 0 0;
+				float: left;
+				display: inline-block;
+				height: 30px;
+				width: 30px;
+				cursor: pointer;
+			}
+			.colors li.black{ background: #111111; }
+			.colors li.grey{ background: #999999; }
+			.colors li.blue{ background: #1a7edc; }
+			.colors li.green{ background: #5FB00C; }
+			.colors li.red{ background: #DA3610; }
+			.colors li.orange{ background: #ff6600; }
+			.colors li.pink{ background: #ea4c88; }
+			.colors li.purple{ background: #993399; }
+			.accordion .accordion-item:first-child .accordion-content .row div{
+				background: #ccc;
+			}
+			.image{
+				margin: 0 auto 15px 30px;
+				width: 200px;
+			}
+			.picture{
+				width: 100%;
+			}
+
+		</style>
+		
+		<script type="text/javascript" src="jquery-1.10.1.min.js"></script>
+		<script type="text/javascript" src="jquery-accordion.js"></script>
+		
+		<script type="text/javascript">
+			jQuery(document).ready(function() {
+				$("#accordion").jqueryAccordion({
+					interval: 300,
+					fadeContent: true,
+					open: true,
+					defaultOpenIndex: 1
+				});
+			});
+		</script>
+		
+	</head>
+	
+	<body>
+		
+		<div class="panel">
+			<ul class="colors">
+				<li class="black"></li>
+				<li class="grey"></li>
+				<li class="blue"></li>
+				<li class="green"></li>
+				<li class="red"></li>
+				<li class="orange"></li>
+				<li class="pink"></li>
+				<li class="purple"></li>
+			</ul>
+		</div>
+		<br><br><br><br><br>
+		<div class="content">
+			
+			<div id="accordion" class="accordion green">
+				<div class="accordion-item">
+					<div class="accordion-header">
+						<span class="title">Grid System</span>
+						<i class="icon-th"></i>
+					</div>
+					<div class="accordion-content">
+						<div class="row">
+							<div class="col1"></div>
+							<div class="col1"></div>
+							<div class="col1"></div>
+							<div class="col1"></div>
+						</div>
+						<div class="row">
+							<div class="col4"></div>
+						</div>
+						<div class="row">
+							<div class="col3"></div>
+							<div class="col1"></div>
+						</div>
+						<div class="row">
+							<div class="col2"></div>
+							<div class="col2"></div>
+						</div>
+						<div class="row">
+							<div class="col1"></div>
+							<div class="col3"></div>
+						</div>
+						<div class="row">
+							<div class="col1"></div>
+							<div class="col1"></div>
+							<div class="col2"></div>
+						</div>
+						<div class="row">
+							<div class="col3"></div>
+							<div class="col1"></div>
+						</div>
+						<div class="row">
+							<div class="col4"></div>
+						</div>
+					</div>
+				</div>
+				<div class="accordion-item">
+					<div class="accordion-header">
+						<span class="title">Images</span>
+						<i class="icon-camera"></i>
+					</div>
+					<div class="accordion-content">
+						<div class="row">
+							<div class="col1">
+								<img class="picture" src="img/1.png" title="house" />
+							</div>
+							<div class="col1">
+								<img class="picture" src="img/2.png" title="house" />
+							</div>
+							<div class="col1">
+								<img class="picture" src="img/3.png" title="house" />
+							</div>
+							<div class="col1">
+								<img class="picture" src="img/4.png" title="house" />
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="accordion-item">
+					<div class="accordion-header">
+						<span class="title">Text</span>
+						<i class="icon-align-left"></i>
+					</div>
+					<div class="accordion-content">
+						<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sem elit, sollicitudin vitae consequat eget, dignissim et nisi. Donec non erat sodales sem pretium molestie sit amet nec lectus. Nulla id odio leo. Curabitur sit amet neque lorem, nec ultrices justo. Sed vitae velit odio, et luctus sapien. Etiam sed lectus quis ligula tristique mattis. Sed consequat fermentum ligula eget imperdiet. Nullam posuere velit id diam accumsan gravida. Quisque pretium ipsum a nunc pharetra viverra eu sit amet risus. Vivamus nec odio sapien. Suspendisse eu sapien non nunc fermentum pharetra. Vestibulum nec elit quis lacus ultricies scelerisque a pulvinar sem.
+						Fusce purus diam, vulputate et adipiscing eu, rutrum non nunc. Ut non augue et metus hendrerit adipiscing. Proin et nisi sed magna adipiscing malesuada id at turpis. Aliquam ultricies bibendum est, eu aliquet enim feugiat venenatis. Nam fringilla dolor vel lacus pellentesque non semper tortor tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vestibulum id tortor a justo vehicula feugiat. Cras vel arcu vel erat posuere mollis non non nibh. Aenean facilisis, velit a dapibus rhoncus, purus augue venenatis nisi, blandit lacinia diam risus ut dui. Proin vel felis eu sem auctor sodales. </p>
+					</div>
+				</div>
+				<div class="accordion-item">
+					<div class="accordion-header">
+						<span class="title">Picture</span>
+						<i class="icon-picture"></i>
+					</div>
+					<div class="accordion-content">
+						<div class="row">
+							<img class="picture" src="img/house.jpg" title="house" />
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</div>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<!-- don't use the javascript code below, it's for demo purposes -->
+		<script>
+			$(document).ready(function(){				
+				$(".colors li").click(function(e){
+					e.preventDefault();
+					var new_style = $(this).attr("class");
+					$(".accordion").removeAttr("class").addClass("accordion").addClass(new_style);
+				});
+			});
+		</script>
+		
+	</body>
+</html>
