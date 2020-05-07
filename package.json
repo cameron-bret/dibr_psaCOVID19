@@ -29,7 +29,7 @@
         "url": "https://github.com/BlackrockDigital/startbootstrap-landing-page.git"
     },
     "dependencies": {
-        "@fortawesome/fontawesome-free": "5.10.2",
+        "@fortawesome/fontawesome-free": "^5.10.2",
         "bootstrap": "4.3.1",
         "jquery": "3.4.1",
         "simple-line-icons": "^2.4.1"
