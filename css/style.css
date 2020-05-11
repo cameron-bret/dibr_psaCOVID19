@@ -1,6 +1,3 @@
-
-
-
 @media screen and (max-width: 768px) {
   div.waveform {
     display: none;
@@ -52,6 +49,16 @@ box-shadow: 15px 15px 20px rgba(0,0, 0, 0.4);
 transform: scale(1.01);
 }
 
+img.downloadButton:hover, img.downloadButton:focus, img.downloadButton:active
+{
+-webkit-box-shadow: 15px 15px 20px rgba(0,0, 0, 0.4);
+-moz-box-shadow: 15px 15px 20px rgba(0,0, 0, 0.4);
+box-shadow: 15px 15px 20px rgba(0,0, 0, 0.4);
+-webkit-transform: scale(1.01);
+-moz-transform: scale(1.01);
+transform: scale(1.01);
+}
+
 table { 
 	width: 1000px; 
 	border-collapse: collapse; 
@@ -94,24 +101,6 @@ td, th {
 .hide {
   display: none;
 }
-
-
-
-    .fa-arrow-down{
-      display: inline-block;
-      float: right;
-      margin-left: 500px;
-      transform: rotate(0deg);
-      transition: transform .3s linear;
-    }
-    
-    .fa-arrow-down.open{
-      display: inline-block;
-      float: right;
-      margin-left: 500px;
-      transform: rotate(180deg);
-      transition: transform .3s linear;
-    }
 
 footer
 {
