@@ -18,10 +18,18 @@ h6 {
   font-weight: 700;
 }
 
+.masthead {
+  max-width: 100%; 
+  height: auto; 
+  margin-left: auto; 
+  margin-right: auto; 
+  display: block;
+}
+
 header.masthead {
   position: relative;
   background-color: #343a40;
-  background: url("../img/bg-masthead.jpg") no-repeat center center;
+  background: url("../img/bg-masthead.png") no-repeat center center;
   background-size: cover;
   padding-top: 8rem;
   padding-bottom: 8rem;
