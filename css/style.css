@@ -5,11 +5,33 @@ html,body
     margin: 0px;
     padding: 0px;
     overflow-x: hidden; 
+    text-decoration: none !important;
 }
 
 .introText {
   padding-top: 3rem;
   padding-bottom: 3rem;
+}
+
+.clickButton {
+  text-decoration: none !important;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 8px;
+  width: 160px;
+  height: 40px;
+  color: white;
+  font-size: 20px;
+  justify-items: center;
+  background: linear-gradient(#ee2a24,#af2f2f);
+}
+
+.clickButton a {
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 @media (max-width: 768px) {
@@ -132,6 +154,16 @@ transform: scale(1.01);
 }
 
 img.downloadButton:hover, img.downloadButton:focus, img.downloadButton:active
+{
+-webkit-box-shadow: 15px 15px 20px rgba(0,0, 0, 0.4);
+-moz-box-shadow: 15px 15px 20px rgba(0,0, 0, 0.4);
+box-shadow: 15px 15px 20px rgba(0,0, 0, 0.4);
+-webkit-transform: scale(1.01);
+-moz-transform: scale(1.01);
+transform: scale(1.01);
+}
+
+button.downloadButton:hover, button.downloadButton:focus, button.downloadButton:active
 {
 -webkit-box-shadow: 15px 15px 20px rgba(0,0, 0, 0.4);
 -moz-box-shadow: 15px 15px 20px rgba(0,0, 0, 0.4);
