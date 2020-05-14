@@ -7,6 +7,11 @@ html,body
     overflow-x: hidden; 
 }
 
+.introText {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
 @media (max-width: 768px) {
   table.audioTable {
     display: block ;
