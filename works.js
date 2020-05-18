@@ -5,23 +5,7 @@ $(document).ready(function() {
 	});
 });
 
-	(function(document){
-		var div = document.getElementById('container');
-		var icon = document.getElementById('icon');
-		var open = false;
-	
-		div.addEventListener('click', function(){
-			if(open){
-				icon.className = 'fa fa-arrow-down';  
-			} else{
-				icon.className = 'fa fa-arrow-down open';
-			}
-	
-			open = !open;
-		});
-	})(document);
-
-	//accordion
+// Accordion
 	
 (function($){
 	jQuery.fn.jqueryAccordion = function(options){
@@ -74,3 +58,33 @@ $(document).ready(function() {
 		
 	}
 }(jQuery));
+
+//Sticky Transparent Nav
+
+//  $(document).ready(function() {
+//             $(".menu-icon").on("click", function() {
+//                   $("nav").toggleClass("showing");
+//             });
+//       });
+
+// Scrolling Effect
+
+// $(window).on("scroll", function() {
+//       if($(window).scrollTop()) {
+//             $('nav').addClass('red');
+//       }
+
+//       else {
+//             $('nav').removeClass('red');
+// 			}
+// })
+
+// Scrolling Effect 2
+
+// $(function () {
+//   $(document).scroll(function () {
+//     var $nav = $(".trial");
+//     $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+//   });
+// });
+

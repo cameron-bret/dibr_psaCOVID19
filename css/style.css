@@ -8,6 +8,54 @@ html,body
     text-decoration: none !important;
 }
 
+ /* Sticky Transparent Nav */
+
+header {
+  width: 100%;
+  height: 80vh;
+  background: url(../img/bg-masthead.png) no-repeat 50% 50%;
+  background-size: cover;
+}
+
+.content {
+  width: 94%;
+  margin: 4em auto;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: justify;
+}
+
+nav  {
+  line-height: 60px;
+  list-style: none;
+  /* background: rgba(0, 0, 0, 0); */
+  overflow: hidden;
+  padding: 0;
+  text-align: right;
+  margin: 0;
+  padding-right: 40px;
+  transition: 1s;
+  text-decoration: none;
+  /* color: #fff; */
+  font-size: 16px;
+  display: inline-block;
+  padding: 16px 40px;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+nav.red {
+  background: #ee2a24;
+}
+
+/* sticky 2nd attempt  */
+
+.trial.scrolled {
+  background-color: #fff !important;
+  transition: background-color 200ms linear;
+}
+
 .introText {
   padding-top: 3rem;
   padding-bottom: 3rem;
