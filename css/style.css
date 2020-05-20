@@ -10,11 +10,29 @@ html,body
 
  /* Sticky Transparent Nav */
 
-header {
+/* header {
   width: 100%;
   height: 70vh;
   background: url(../img/bg-masthead.png) no-repeat 50% 50%;
   background-size: cover;
+} */
+
+@media (max-width: 768px) {
+  header {
+    width: 100%;
+    height: 70vh;
+    background: url('../img/bg-masthead2.png') no-repeat 50% 50%;
+    background-size: cover;
+  }
+}
+
+@media (min-width: 768px) {
+  header {
+    width: 100%;
+    height: 70vh;
+    background: url('../img/bg-masthead.png') no-repeat 50% 50%;
+    background-size: cover;
+  }
 }
 
 .content {
