@@ -9,6 +9,9 @@
 
   <title>Do It Best Radio - PSA</title>
 
+  <!-- Appearing Header  -->
+  <link rel="stylesheet" type="text/css" href="css/stickybars.css">
+
   <!-- Accordion style sheet  -->
   <link rel="stylesheet" type="text/css" href="css/jquery-accordion.css">
   <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
@@ -29,21 +32,6 @@
 
   <!-- Custom fonts for this template -->
   <link href="css/style.css" rel="stylesheet" />
-  <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css" />
-  <style type="text/css">
-    #mc_embed_signup {
-      background: #ee2a24;
-      padding: auto;
-      clear: center;
-      font: 14px Helvetica, Arial, sans-serif;
-      color: white;
-      width: 400px;
-      margin: 0 auto;
-    }
-
-    /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
-	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-  </style>
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" />
   <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css" />
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet"
@@ -60,10 +48,29 @@
 
 <body>
 
-  <!-- Sticky Transparent Nav 2  -->
+  <!-- Appearing Header  -->
+
+  <div id="sbar-wrapper"><!-- BEGIN STICKY BARS CONTAINER -->
+			
+
+    <div class="sbar-container"><!-- Begin sticky bar #1 -->
+      
+      <div id="sbar1" class="sbar sbar-horizontal sbar-dark sbar-top sbar-left">
+
+        <div class="sbar-inner">
+            <img class="sbar-contentleft" style="margin-left: 10px;" src="img/dib_logo.png" width="146" height="90" alt="do it best radio" />
+          <h1 class="sbar-contentright" style="margin-top: 35px; margin-bottom: 40px;">(888) 864 - 1232</h1>
+        </div>
+
+      </div>
+
+    </div><!-- End sticky bar #1 -->
+
+
+  </div><!-- END STICKY BARS CONTAINER -->  
 
   <!-- Sticky Transparent Navigation  -->
-  <div class="wrapper">
+  <div class="wrapper" style="z-index: 0;">
     <header>
       <nav>
       <div class="container navbar">
@@ -99,7 +106,7 @@
   </div> -->
 
   <!-- Intro Explanation -->
-  <section class=" introText bg-white text-center">
+  <section class="introText bg-white text-center">
     <div class="container">
       <h4>
         We are all in this together. And successful cooperation requires effective communication. This series of Public
@@ -114,8 +121,11 @@
   <section class="showcase" style="background-color: #e8e8e8;">
     <div class="container-fluid p-0">
       <div class="row no-gutters">
-        <div class="col-lg-6 order-lg-2 text-white showcase-img"
-          style="background-image: url('img/wereonyourteam.jpeg');">
+        <div class="image1 col-lg-6 order-lg-2 text-white showcase-img"
+          style="background-image: url('img/wereonyourteam.png');">
+        </div>
+        <div class="image2 col-lg-6 order-lg-2 text-white showcase-img"
+          style="background-image: url('img/wereonyourteam2.png');">
         </div>
         <div class="col-lg-6 order-lg-1 my-auto showcase-text">
           <h2>We are on your team</h2>
@@ -143,8 +153,11 @@
         </div>
       </div>
       <div class="row no-gutters">
-        <div class="col-lg-6 order-lg-2 text-white showcase-img"
-          style="background-image: url('img/shoppingDuringCoronavirus.jpeg');">
+        <div class="image1 col-lg-6 order-lg-2 text-white showcase-img"
+          style="background-image: url('img/shoppingDuringCoronavirus.png');">
+        </div>
+        <div class="image2 col-lg-6 order-lg-2 text-white showcase-img"
+          style="background-image: url('img/shoppingDuringCoronavirus2.png');">
         </div>
         <div class="col-lg-6 order-lg-1 my-auto showcase-text">
           <h2>How you can use it</h2>
@@ -189,7 +202,7 @@
               <tr style="background-color: #e9edf8;">
                 <td class="audioTitle">Coronavirus Response</td>
                 <td style="text-align: center;">
-                  <audio controls loop preload="auto">
+                  <audio controls>
                     <source src="psa/PSA_coronavirusResponse.mp3" />
                     Your browser dose not Support the audio Tag
                   </audio>
@@ -207,7 +220,7 @@
               <tr style="background-color: #f6f6f6;">
                 <td class="audioTitle">Social Distancing - Version 1</td>
                 <td style="text-align: center;">
-                  <audio controls loop preload="auto">
+                  <audio controls>
                     <source src="psa/PSA_coronavirusSocialDistancing_v1.mp3" />
                     Your browser dose not Support the audio Tag
                   </audio>
@@ -224,7 +237,7 @@
               <tr style="background-color: #e9edf8;">
                 <td class="audioTitle">Social Distancing - Version 2</td>
                 <td style="text-align: center;">
-                  <audio controls loop preload="auto">
+                  <audio controls>
                     <source src="psa/PSA_coronavirusSocialDistancing_v2.mp3" />
                     Your browser dose not Support the audio Tag
                   </audio>
@@ -241,7 +254,7 @@
               <tr style="background-color: #f6f6f6;">
                 <td class="audioTitle">Social Distancing - Version 3</td>
                 <td style="text-align: center;">
-                  <audio controls loop preload="auto">
+                  <audio controls>
                     <source src="psa/THM_COVID19PSA_SocialDistancing2_NS.mp3" />
                     Your browser dose not Support the audio Tag
                   </audio>
@@ -258,7 +271,7 @@
               <tr style="background-color: #e9edf8;">
                 <td class="audioTitle">We Are Open - Version 1</td>
                 <td style="text-align: center;">
-                  <audio controls loop preload="auto">
+                  <audio controls>
                     <source src="psa/PSA_coronavirusWeAreOpen_v1.mp3" />
                     Your browser dose not Support the audio Tag
                   </audio>
@@ -275,7 +288,7 @@
               <tr style="background-color: #f6f6f6;">
                 <td class="audioTitle">We Are Open - Version 2</td>
                 <td style="text-align: center;">
-                  <audio controls loop preload="auto">
+                  <audio controls>
                     <source src="psa/PSA_coronavirusWeAreOpen_v2.mp3" />
                     Your browser dose not Support the audio Tag
                   </audio>
@@ -309,7 +322,7 @@
               <tr style="background-color: #e9edf8;">
                 <td class="audioTitle">Adjusted Hours - Version 1</td>
                 <td style="text-align: center;">
-                  <audio controls loop preload="auto">
+                  <audio controls>
                     <source src="psa/PSA_coronavirusAdjustedHours_v1.mp3" />
                     Your browser dose not Support the audio Tag
                   </audio>
@@ -326,7 +339,7 @@
               <tr style="background-color: #f6f6f6;">
                 <td class="audioTitle">Adjusted Hours - Version 2</td>
                 <td style="text-align: center;">
-                  <audio controls loop preload="auto">
+                  <audio controls>
                     <source src="psa/PSA_coronavirusAdjustedHours_v2.mp3" />
                     Your browser dose not Support the audio Tag
                   </audio>
@@ -343,7 +356,7 @@
               <tr style="background-color: #e9edf8;">
                 <td class="audioTitle">Senior Service Hours - Version 1</td>
                 <td style="text-align: center;">
-                  <audio controls loop preload="auto">
+                  <audio controls>
                     <source src="psa/PSA_coronavirusSeniorServiceHours_v1.mp3" />
                     Your browser dose not Support the audio Tag
                   </audio>
@@ -360,7 +373,7 @@
               <tr style="background-color: #f6f6f6;">
                 <td class="audioTitle">Senior Service Hours - Version 2</td>
                 <td style="text-align: center;">
-                  <audio controls loop preload="auto">
+                  <audio controls>
                     <source src="psa/PSA_coronavirusSeniorServices_v2.mp3" />
                     Your browser dose not Support the audio Tag
                   </audio>
@@ -377,7 +390,7 @@
               <tr style="background-color: #e9edf8;">
                 <td class="audioTitle">High Demand Items - Version 1</td>
                 <td style="text-align: center;">
-                  <audio controls loop preload="auto">
+                  <audio controls>
                     <source src="psa/PSA_coronavirusHighDemandItems_v1.mp3" />
                     Your browser dose not Support the audio Tag
                   </audio>
@@ -394,7 +407,7 @@
               <tr style="background-color: #f6f6f6;">
                 <td class="audioTitle">High Demand Items - Version 2</td>
                 <td style="text-align: center;">
-                  <audio controls loop preload="auto">
+                  <audio controls>
                     <source src="psa/PSA_coronavirusHighDemandItems_v2.mp3" />
                     Your browser dose not Support the audio Tag
                   </audio>
@@ -411,7 +424,7 @@
               <tr style="background-color: #e9edf8;">
                 <td class="audioTitle">High Demand Items - Version 3</td>
                 <td style="text-align: center;">
-                  <audio controls loop preload="auto">
+                  <audio controls>
                     <source src="psa/THM_COVID19PSA_HighDemandItems2_NS.mp3" />
                     Your browser dose not Support the audio Tag
                   </audio>
@@ -446,7 +459,7 @@
               <tr style="background-color: #e9edf8;">
                 <td class="audioTitle">Curbside Assistance - Version 1</td>
                 <td style="text-align: center;">
-                  <audio controls loop preload="auto">
+                  <audio controls>
                     <source src="psa/THM_COVID19PSA_CurbsideService1_NS.mp3" />
                     Your browser dose not Support the audio Tag
                   </audio>
@@ -463,7 +476,7 @@
               <tr style="background-color: #f6f6f6;">
                 <td class="audioTitle">Curbside Assistance - Version 2</td>
                 <td style="text-align: center;">
-                  <audio controls loop preload="auto">
+                  <audio controls>
                     <source src="psa/PSA_coronavirusCurbsideAssistance_v2.mp3" />
                     Your browser dose not Support the audio Tag
                   </audio>
@@ -480,7 +493,7 @@
               <tr style="background-color: #e9edf8;">
                 <td class="audioTitle">Curbside Assistance - Version 3</td>
                 <td style="text-align: center;">
-                  <audio controls loop preload="auto">
+                  <audio controls>
                     <source src="psa/THM_COVID19PSA_CurbsidePickup2_NS.mp3" />
                     Your browser dose not Support the audio Tag
                   </audio>
@@ -497,7 +510,7 @@
               <tr style="background-color: #f6f6f6;">
                 <td class="audioTitle">Delivery</td>
                 <td style="text-align: center;">
-                  <audio controls loop preload="auto">
+                  <audio controls>
                     <source src="psa/THM_COVID19PSA_Delivery2_NS.mp3" />
                     Your browser dose not Support the audio Tag
                   </audio>
@@ -514,7 +527,7 @@
               <tr style="background-color: #e9edf8;">
                 <td class="audioTitle">Special Arrangements</td>
                 <td style="text-align: center;">
-                  <audio controls loop preload="auto">
+                  <audio controls>
                     <source src="psa/THM_COVID19PSA_SpecialArrangments2_NS.mp3" />
                     Your browser dose not Support the audio Tag
                   </audio>
@@ -531,7 +544,7 @@
               <tr style="background-color: #f6f6f6;">
                 <td class="audioTitle">Special Orders</td>
                 <td style="text-align: center;">
-                  <audio controls loop preload="auto">
+                  <audio controls>
                     <source src="psa/THM_COVID19PSA_SpecialOrders2_NS.mp3" />
                     Your browser dose not Support the audio Tag
                   </audio>
@@ -565,7 +578,7 @@
               <tr style="background-color: #e9edf8;">
                 <td class="audioTitle">High Demand Items - Spanish</td>
                 <td style="text-align: center;" colspan="3">
-                  <audio controls loop preload="auto">
+                  <audio controls>
                     <source src="psa/PSA_coronavirusHighDemand_spanish.mp3" />
                     Your browser dose not Support the audio Tag
                   </audio>
@@ -580,7 +593,7 @@
               <tr style="background-color: #f6f6f6;">
                 <td class="audioTitle">Social Distancing - Spanish</td>
                 <td style="text-align: center;" colspan="3">
-                  <audio controls loop preload="auto">
+                  <audio controls>
                     <source src="psa/PSA_coronavirusSocialDistancing_spanish.mp3" />
                     Your browser dose not Support the audio Tag
                   </audio>
@@ -722,6 +735,28 @@
         <!-- Work JS -->
         <script src="works.js"></script>
 
+        <!-- Appearing Header JS -->
+        <script src="stickybars.js"></script>
+        <!-- <script src="jquery.js"></script> -->
+        
+<script>
+        $(document).ready(function($){
+			$('#sbar-wrapper').stickyBar([
+	        	{
+			        sbar_id: '#sbar1',
+			        sbar_show_effect: 'fade', // Effect to show the sticky bar
+			        sbar_hide_effect: 'fade', // Effect to hide the sticky bar
+			        sbar_position_show: 40, // 0 to display the bar on page load
+			        sbar_position_hide: 2000, // Position on the Y axis to hide the bar
+			        sbar_anchor_show: '', // Anchor ID to show the bar (has priority on the sbar_position_show option)
+			        sbar_anchor_hide: '', // Anchor ID to hide the bar (has priority on the sbar_position_hide option)
+			        sbar_anchor_show_offset: 0, // Adjustment of the show position (along with an anchor)
+			        sbar_anchor_hide_offset: 0, // Adjustment of the hide position (along with an anchor)
+			        sbar_close_button: true // Optional close button
+		        }
+			]);
+        });
+    </script>
         <!-- https://fontawesome.com/license thanks for the icons  -->
 
 </body>

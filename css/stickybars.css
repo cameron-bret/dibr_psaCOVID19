@@ -1,0 +1,1135 @@
+/*
+Item Name : StickyBars - Fixed Bars Animated on Scroll
+Author URI : http://codecanyon.net/user/Pixelworkshop
+Version : 1.0
+*/
+
+
+/*
+
+TABLE OF CONTENTS
+
+00 PAGE STYLING (demo)
+01 STICKY BAR CONTAINER
+02 STICKY BAR CONTENT
+03 MOBILE DEVICES
+04 STICKY BAR EFFECTS
+05 ICONS
+
+*/
+
+
+
+
+
+
+/*  _______________________________________________
+
+    01 STICKY BAR CONTAINER
+    _______________________________________________  */
+
+
+
+
+
+#sbar-wrapper {
+
+}
+.sbar-container {
+
+}	
+.sbar {
+	position: fixed;
+	padding: 0;
+	z-index: 1;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+.sbar-horizontal {
+	width: 100%;
+	height: auto;
+}
+.sbar-horizontal-half {
+	width: 50%;
+}
+.sbar-vertical {
+	width: 260px;
+	height: 100%;
+	overflow-y:auto;
+}
+.sbar-left {
+	left: 0;
+}
+.sbar-right {
+	right: 0;
+}
+.sbar-top {
+	top:0;
+}
+.sbar-bottom {
+	bottom: 0;
+}
+
+/* Used to hide the bars when the page loads */
+.sbar-hide {
+	left:-9999em;
+	visibility:hidden;
+}
+
+
+
+
+/*  _______________________________________________
+
+    02 STICKY BAR CONTENT
+    _______________________________________________  */
+
+
+
+
+
+/* Optionnal close button */
+
+.sbar-close {
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	cursor: pointer;
+	top:10px;
+	right: 10px;
+}
+.sbar-close i {
+	font-size: 14px;
+	line-height: 40px;
+}
+
+/* Typography */
+
+.sbar h1,
+.sbar h2,
+.sbar h3,
+.sbar h4,
+.sbar p,
+.sbar ul,
+.sbar nav {
+	line-height: 20px;
+	margin: 10px 0;
+	vertical-align: middle;
+}
+.sbar-vertical h1,
+.sbar-vertical h2,
+.sbar-vertical h3,
+.sbar-vertical h4,
+.sbar-vertical p,
+.sbar-vertical ul,
+.sbar-vertical nav {
+	margin: 10px 0 20px 0;
+}
+.sbar ul li {
+	margin: 0;
+}
+
+/* Font sizes and basic styling */
+
+.sbar a {
+	text-decoration: none;
+	transition: color .3s;
+}
+.sbar p {
+	font-size: 12px;
+}
+.sbar h1 {
+    font-size: 24px;
+}
+.sbar h2 {
+    font-size: 20px;
+}
+.sbar h3 {
+    font-size: 16px;
+}
+.sbar h4 {
+    font-size: 14px;
+}
+.sbar ul {
+	list-style: none;
+	padding: 0;
+}
+.sbar ul li {
+	font-size: 12px;
+}
+	.sbar-horizontal ul li {
+		float: left;
+		margin-left: 20px;
+	}
+	.sbar-vertical ul li {
+		margin-left: 0;
+	}
+.sbar ul li a {
+	font-size: 12px;
+}
+.sbar ul.sbar-socialicons li a {
+	font-size: 16px;
+}
+.sbar .sbar-textbox {
+	padding: 10px 15px;
+}
+
+/* Vertical lists */
+
+.sbar ul.sbar-vertical-list {
+	list-style: none;
+	margin: 25px 0;
+}
+.sbar ul.sbar-vertical-list li {
+	padding: 9px 0;
+}
+
+/* Videos & Images */
+
+.sbar .sbar-video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+    margin-bottom: 18px;
+}
+    .sbar .sbar-video-container iframe,  
+    .sbar .sbar-video-container object,  
+    .sbar .sbar-video-container embed {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border:none;
+        outline: none;
+    }
+.sbar iframe {
+    border:0;
+    outline: none;
+    width: 100%;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+    margin-bottom: 12px;
+}
+.sbar img {
+    border:none;
+    max-width: 100%;
+    height: auto;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.sbar .sbar-logo {
+	width: 21px;
+	height: 26px;
+	float: left;
+	margin: 4px 10px 0 0;
+	background:url('../img/dib_logo.png') left center no-repeat;
+}
+
+/* Content containers */
+
+.sbar .sbar-inner {
+	position: relative;
+	overflow: hidden;
+	width: 80%;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 10px 0;
+}
+.sbar-horizontal .sbar-inner-button {
+	padding: 10px 50px 10px 10px;
+}
+.sbar .sbar-contentleft {
+	float: left;
+}
+.sbar .sbar-contentright {
+	float: right;
+}
+.sbar .sbar-contentcenter {
+	float: none;
+	text-align: center;
+}
+
+/* Dark sbar */
+
+.sbar-dark {
+	background: #ee2a24;
+}
+.sbar-dark p,
+.sbar-dark h1,
+.sbar-dark h2,
+.sbar-dark h3,
+.sbar-dark h4 {
+	color: #eeeeee;
+}
+.sbar-dark ul li {
+	color: #bbbbbb;
+}
+.sbar-dark ul.sbar-vertical-list li {
+	border-top: 1px solid #252525;
+	border-bottom: 1px solid #0e0e0e;
+}
+.sbar-dark ul.sbar-vertical-list li:first-child {
+	border-top: none;
+}
+.sbar-dark ul.sbar-vertical-list li:last-child {
+	border-bottom: none;
+}
+.sbar-dark a {
+	color: #999999;
+}
+.sbar-dark a:hover {
+	color: #aaaaaa;
+}
+.sbar-dark .sbar-textbox {
+	background: #111111;
+}
+.sbar-dark .sbar-close {
+	background: #000000;
+}
+.sbar-dark .sbar-close i {
+	color: #eeeeee;
+}
+.sbar-dark::-webkit-scrollbar {
+	width: 8px;
+}
+.sbar-dark::-webkit-scrollbar-track {
+	background:#444444;
+}
+.sbar-dark::-webkit-scrollbar-thumb {
+	background:#0a0a0a;
+}
+.sbar-dark::-webkit-scrollbar-thumb:hover {
+	background:#000000;
+}			
+
+/* Light sbar */
+
+.sbar-light {
+	background: #eeeeee;
+}
+.sbar-light p,
+.sbar-light h1,
+.sbar-light h2,
+.sbar-light h3,
+.sbar-light h4 {
+	color: #333333;
+}
+.sbar-light ul li {
+	color: #666666;
+}
+.sbar-light ul.sbar-vertical-list li {
+	border-top: 1px solid #f2f2f2;
+	border-bottom: 1px solid #dddddd;
+}
+.sbar-light ul.sbar-vertical-list li:first-child {
+	border-top: none;
+}
+.sbar-light ul.sbar-vertical-list li:last-child {
+	border-bottom: none;
+}
+.sbar-light a {
+	color: #888888;
+}
+.sbar-light a:hover {
+	color: #777777;
+}
+.sbar-light .sbar-textbox {
+	background: #ffffff;
+}
+.sbar-light .sbar-close {
+	background: #cccccc;
+}
+.sbar-light .sbar-close i {
+	color: #666666;
+}
+.sbar-light::-webkit-scrollbar {
+	width: 8px;
+}
+.sbar-light::-webkit-scrollbar-track {
+	background:#dddddd;
+}
+.sbar-light::-webkit-scrollbar-thumb {
+	background:#aaaaaa;
+}
+.sbar-light::-webkit-scrollbar-thumb:hover {
+	background:#bbbbbb;
+}
+
+
+
+
+/*  _______________________________________________
+
+    03 MOBILE DEVICES
+    _______________________________________________  */
+
+
+
+
+@media only screen and (max-width: 767px) {
+
+	.sbar-container .sbar {
+		top:0 !important;
+	}
+	.sbar-container .sbar-bottom {
+		top:auto !important;
+		bottom: 0 !important;
+	}
+	.sbar-horizontal {
+		width: 100%;
+	}
+	.sbar-horizontal-half {
+		width: 100%;
+	}
+	.sbar-vertical {
+		width: 80%;
+	}
+	.sbar .sbar-contentleft,
+	.sbar .sbar-contentright {
+		float: left;
+		margin-right: 20px;
+	}
+	.sbar-horizontal ul li {
+		margin-left: 0;
+		margin-right: 20px;
+	}
+	.sbar-vertical.sbar-dark {
+		border-bottom: 10px solid #161616;
+	}
+	.sbar-vertical.sbar-light {
+		border-bottom: 10px solid #eeeeee;
+	}
+
+}
+
+
+
+
+
+/*  _______________________________________________
+
+    04 STICKY BAR EFFECTS
+    _______________________________________________  */
+
+
+
+
+
+/* Effects List
+   fade
+   slideLeft
+   slideRight
+   slideDown (only for top bar)
+   slideUp (only for footer bar)
+   slideLeftFade
+   slideRightFade
+   slideDownFade (only for top bar)
+   slideUpFade (only for footer bar)
+   scaleUp
+   scaleDown
+   slideLeftScale
+   slideRightScale
+   slideDownScale (only for top bar)
+   slideUpScale (only for footer bar)
+   slideDownScaleReversed
+   slideUpScaleReversed
+*/
+
+/* 1. Fade in & out */
+
+.fadeIn {
+	-webkit-animation: fadeIn .5s ease both;
+	-moz-animation: fadeIn .5s ease both;
+	animation: fadeIn .5s ease both;
+}
+	@-webkit-keyframes fadeIn {
+		from { opacity: 0; }
+	}
+	@-moz-keyframes fadeIn {
+		from { opacity: 0; }
+	}
+	@keyframes fadeIn {
+		from { opacity: 0; }
+	}
+.fadeOut {
+	-webkit-animation: fadeOut .5s ease both;
+	-moz-animation: fadeOut .5s ease both;
+	animation: fadeOut .5s ease both;
+}
+	@-webkit-keyframes fadeOut {
+		to { opacity: 0; }
+	}
+	@-moz-keyframes fadeOut {
+		to { opacity: 0; }
+	}
+	@keyframes fadeOut {
+		to { opacity: 0; }
+	}
+
+/* 2. Move from and to left */
+
+.slideLeftIn {
+	-webkit-animation: slideLeftIn .5s ease both;
+	-moz-animation: slideLeftIn .5s ease both;
+	animation: slideLeftIn .5s ease both;
+}
+	@-webkit-keyframes slideLeftIn {
+		from { -webkit-transform: translateX(-100%); }
+	}
+	@-moz-keyframes slideLeftIn {
+		from { -moz-transform: translateX(-100%); }
+	}
+	@keyframes slideLeftIn {
+		from { transform: translateX(-100%); }
+	}
+.slideLeftOut {
+	-webkit-animation: slideLeftOut .5s ease both;
+	-moz-animation: slideLeftOut .5s ease both;
+	animation: slideLeftOut .5s ease both;
+}
+	@-webkit-keyframes slideLeftOut {
+		to { -webkit-transform: translateX(-100%); }
+	}
+	@-moz-keyframes slideLeftOut {
+		to { -moz-transform: translateX(-100%); }
+	}
+	@keyframes slideLeftOut {
+		to { transform: translateX(-100%); }
+	}
+
+/* 3. Move from and to right */
+
+.slideRightIn {
+	-webkit-animation: slideRightIn .5s ease both;
+	-moz-animation: slideRightIn .5s ease both;
+	animation: slideRightIn .5s ease both;
+}
+	@-webkit-keyframes slideRightIn {
+		from { -webkit-transform: translateX(100%); }
+	}
+	@-moz-keyframes slideRightIn {
+		from { -moz-transform: translateX(100%); }
+	}
+	@keyframes slideRightIn {
+		from { transform: translateX(100%); }
+	}
+.slideRightOut {
+	-webkit-animation: slideRightOut .5s ease both;
+	-moz-animation: slideRightOut .5s ease both;
+	animation: slideRightOut .5s ease both;
+}
+	@-webkit-keyframes slideRightOut { 
+		to { -webkit-transform: translateX(100%); }
+	}
+	@-moz-keyframes slideRightOut { 
+		to { -moz-transform: translateX(100%); }
+	}
+	@keyframes slideRightOut { 
+		to { transform: translateX(100%); }
+	}
+
+/* 4. Move from and to top */
+
+.slideDownIn {
+	-webkit-animation: slideDownIn .5s ease both;
+	-moz-animation: slideDownIn .5s ease both;
+	animation: slideDownIn .5s ease both;
+}
+	@-webkit-keyframes slideDownIn {
+		from { -webkit-transform: translateY(-100%); }
+	}
+	@-moz-keyframes slideDownIn {
+		from { -moz-transform: translateY(-100%); }
+	}
+	@keyframes slideDownIn {
+		from { transform: translateY(-100%); }
+	}
+.slideDownOut {
+	-webkit-animation: slideDownOut .5s ease both;
+	-moz-animation: slideDownOut .5s ease both;
+	animation: slideDownOut .5s ease both;
+}
+	@-webkit-keyframes slideDownOut {
+		to { -webkit-transform: translateY(-100%); }
+	}
+	@-moz-keyframes slideDownOut {
+		to { -moz-transform: translateY(-100%); }
+	}
+	@keyframes slideDownOut {
+		to { transform: translateY(-100%); }
+	}
+
+/* 5. Move from and to bottom */
+
+.slideUpIn {
+	-webkit-animation: slideUpIn .6s ease both;
+	-moz-animation: slideUpIn .6s ease both;
+	animation: slideUpIn .6s ease both;
+}
+	@-webkit-keyframes slideUpIn {
+		to { -webkit-transform: translateY(100%); }
+	}
+	@-moz-keyframes slideUpIn {
+		to { -moz-transform: translateY(100%); }
+	}
+	@keyframes slideUpIn {
+		to { transform: translateY(100%); }
+	}
+.slideUpOut {
+	-webkit-animation: slideUpOut .6s ease both;
+	-moz-animation: slideUpOut .6s ease both;
+	animation: slideUpOut .6s ease both;
+}
+	@-webkit-keyframes slideUpOut {
+		from { -webkit-transform: translateY(100%); }
+	}
+	@-moz-keyframes slideUpOut {
+		from { -moz-transform: translateY(100%); }
+	}
+	@keyframes slideUpOut {
+		from { transform: translateY(100%); }
+	}
+
+/* 6. Move from and to left + fade */
+
+.slideLeftFadeIn {
+	-webkit-animation: slideLeftFadeIn .5s ease both;
+	-moz-animation: slideLeftFadeIn .5s ease both;
+	animation: slideLeftFadeIn .5s ease both;
+}
+	@-webkit-keyframes slideLeftFadeIn {
+		from { opacity: 0; -webkit-transform: translateX(-100%); }
+	}
+	@-moz-keyframes slideLeftFadeIn {
+		from { opacity: 0; -moz-transform: translateX(-100%); }
+	}
+	@keyframes slideLeftFadeIn {
+		from { opacity: 0; transform: translateX(-100%); }
+	}
+.slideLeftFadeOut {
+	-webkit-animation: slideLeftFadeOut .5s ease both;
+	-moz-animation: slideLeftFadeOut .5s ease both;
+	animation: slideLeftFadeOut .5s ease both;
+}
+	@-webkit-keyframes slideLeftFadeOut {
+		to { opacity: 0; -webkit-transform: translateX(-100%); }
+	}
+	@-moz-keyframes slideLeftFadeOut {
+		to { opacity: 0; -moz-transform: translateX(-100%); }
+	}
+	@keyframes slideLeftFadeOut {
+		to { opacity: 0; transform: translateX(-100%); }
+	}
+
+/* 7. Move from and to right + fade */
+
+.slideRightFadeIn {
+	-webkit-animation: slideRightFadeIn .5s ease both;
+	-moz-animation: slideRightFadeIn .5s ease both;
+	animation: slideRightFadeIn .5s ease both;
+}
+	@-webkit-keyframes slideRightFadeIn {
+		from { opacity: 0; -webkit-transform: translateX(100%); }
+	}
+	@-moz-keyframes slideRightFadeIn {
+		from { opacity: 0; -moz-transform: translateX(100%); }
+	}
+	@keyframes slideRightFadeIn {
+		from { opacity: 0; transform: translateX(100%); }
+	}
+.slideRightFadeOut {
+	-webkit-animation: slideRightFadeOut .5s ease both;
+	-moz-animation: slideRightFadeOut .5s ease both;
+	animation: slideRightFadeOut .5s ease both;
+}
+	@-webkit-keyframes slideRightFadeOut {
+		to { opacity: 0; -webkit-transform: translateX(100%); }
+	}
+	@-moz-keyframes slideRightFadeOut {
+		to { opacity: 0; -moz-transform: translateX(100%); }
+	}
+	@keyframes slideRightFadeOut {
+		to { opacity: 0; transform: translateX(100%); }
+	}
+
+/* 8. Move from and to top + fade */
+
+.slideDownFadeIn {
+	-webkit-animation: slideDownFadeIn .5s ease both;
+	-moz-animation: slideDownFadeIn .5s ease both;
+	animation: slideDownFadeIn .5s ease both;
+}
+	@-webkit-keyframes slideDownFadeIn {
+		from { opacity: 0; -webkit-transform: translateY(-100%); }
+	}
+	@-moz-keyframes slideDownFadeIn {
+		from { opacity: 0; -moz-transform: translateY(-100%); }
+	}
+	@keyframes slideDownFadeIn {
+		from { opacity: 0; transform: translateY(-100%); }
+	}
+.slideDownFadeOut {
+	-webkit-animation: slideDownFadeOut .5s ease both;
+	-moz-animation: slideDownFadeOut .5s ease both;
+	animation: slideDownFadeOut .5s ease both;
+}
+	@-webkit-keyframes slideDownFadeOut {
+		to { opacity: 0; -webkit-transform: translateY(-100%); }
+	}
+	@-moz-keyframes slideDownFadeOut {
+		to { opacity: 0; -moz-transform: translateY(-100%); }
+	}
+	@keyframes slideDownFadeOut {
+		to { opacity: 0; transform: translateY(-100%); }
+	}
+
+/* 9. Move from and to bottom + fade */
+
+.slideUpFadeOut {
+	-webkit-animation: slideUpFadeOut .7s ease both;
+	-moz-animation: slideUpFadeOut .7s ease both;
+	animation: slideUpFadeOut .7s ease both;
+}
+	@-webkit-keyframes slideUpFadeOut {
+		to { opacity: 0; -webkit-transform: translateY(100%); }
+	}
+	@-moz-keyframes slideUpFadeOut {
+		to { opacity: 0; -moz-transform: translateY(100%); }
+	}
+	@keyframes slideUpFadeOut {
+		to { opacity: 0; transform: translateY(100%); }
+	}
+.slideUpFadeIn {
+	-webkit-animation: slideUpFadeIn .7s ease both;
+	-moz-animation: slideUpFadeIn .7s ease both;
+	animation: slideUpFadeIn .7s ease both;
+}
+	@-webkit-keyframes slideUpFadeIn {
+		from { opacity: 0; -webkit-transform: translateY(100%); }
+	}
+	@-moz-keyframes slideUpFadeIn {
+		from { opacity: 0; -moz-transform: translateY(100%); }
+	}
+	@keyframes slideUpFadeIn {
+		from { opacity: 0; transform: translateY(100%); }
+	}
+
+/* 10. Scale up + fade */
+
+.scaleUpIn {
+	-webkit-animation: scaleUpIn .7s ease both;
+	-moz-animation: scaleUpIn .7s ease both;
+	animation: scaleUpIn .7s ease both;
+}
+	@-webkit-keyframes scaleUpIn {
+		from { opacity: 0; -webkit-transform: scale(.8); }
+	}
+	@-moz-keyframes scaleUpIn {
+		from { opacity: 0; -moz-transform: scale(.8); }
+	}
+	@keyframes scaleUpIn {
+		from { opacity: 0; transform: scale(.8); }
+	}
+.scaleUpOut {
+	-webkit-animation: scaleUpOut .7s ease both;
+	-moz-animation: scaleUpOut .7s ease both;
+	animation: scaleUpOut .7s ease both;
+}
+	@-webkit-keyframes scaleUpOut {
+		to { opacity: 0; -webkit-transform: scale(.8); }
+	}
+	@-moz-keyframes scaleUpOut {
+		to { opacity: 0; -moz-transform: scale(.8); }
+	}
+	@keyframes scaleUpOut {
+		to { opacity: 0; transform: scale(.8); }
+	}
+
+/* 11. Scale down + fade */
+
+.scaleDownIn {
+	-webkit-animation: scaleDownIn .5s ease both;
+	-moz-animation: scaleDownIn .5s ease both;
+	animation: scaleDownIn .5s ease both;
+}
+	@-webkit-keyframes scaleDownIn {
+		from { opacity: 0; -webkit-transform: scale(1.2); }
+	}
+	@-moz-keyframes scaleDownIn {
+		from { opacity: 0; -moz-transform: scale(1.2); }
+	}
+	@keyframes scaleDownIn {
+		from { opacity: 0; transform: scale(1.2); }
+	}
+.scaleDownOut {
+	-webkit-animation: scaleDownOut .5s ease both;
+	-moz-animation: scaleDownOut .5s ease both;
+	animation: scaleDownOut .5s ease both;
+}
+	@-webkit-keyframes scaleDownOut {
+		to { opacity: 0; -webkit-transform: scale(1.2); }
+	}
+	@-moz-keyframes scaleDownOut {
+		to { opacity: 0; -moz-transform: scale(1.2); }
+	}
+	@keyframes scaleDownOut {
+		to { opacity: 0; transform: scale(1.2); }
+	}
+
+/* 12. Slide left + scale */
+
+.slideLeftScaleIn {
+	-webkit-animation: slideLeftScaleIn .8s both ease;
+	-moz-animation: slideLeftScaleIn .8s both ease;
+	animation: slideLeftScaleIn .8s both ease;
+}
+@-webkit-keyframes slideLeftScaleIn {
+	from { opacity: 0; -webkit-transform: translateX(-200%) scale(.8); }
+}
+@-moz-keyframes slideLeftScaleIn {
+	from { opacity: 0; -moz-transform: translateX(-200%) scale(.8); }
+}
+@keyframes slideLeftScaleIn {
+	from { opacity: 0; transform: translateX(-200%) scale(.8); }
+}
+.slideLeftScaleOut {
+	-webkit-animation: slideLeftScaleOut 1.2s both ease;
+	-moz-animation: slideLeftScaleOut 1.2s both ease;
+	animation: slideLeftScaleOut 1.2s both ease;
+}
+@-webkit-keyframes slideLeftScaleOut {
+	to { opacity: 0; -webkit-transform: translateX(-200%) scale(.8); }
+}
+@-moz-keyframes slideLeftScaleOut {
+	to { opacity: 0; -moz-transform: translateX(-200%) scale(.8); }
+}
+@keyframes slideLeftScaleOut {
+	to { opacity: 0; transform: translateX(-200%) scale(.8); }
+}
+
+/* 13. Slide right + scale */
+
+.slideRightScaleIn {
+	-webkit-animation: slideRightScaleIn .8s both ease;
+	-moz-animation: slideRightScaleIn .8s both ease;
+	animation: slideRightScaleIn .8s both ease;
+}
+@-webkit-keyframes slideRightScaleIn {
+	from { opacity: 0; -webkit-transform: translateX(200%) scale(.8); }
+}
+@-moz-keyframes slideRightScaleIn {
+	from { opacity: 0; -moz-transform: translateX(200%) scale(.8); }
+}
+@keyframes slideRightScaleIn {
+	from { opacity: 0; transform: translateX(200%) scale(.8); }
+}
+.slideRightScaleOut {
+	-webkit-animation: slideRightScaleOut 1.2s both ease;
+	-moz-animation: slideRightScaleOut 1.2s both ease;
+	animation: slideRightScaleOut 1.2s both ease;
+}
+@-webkit-keyframes slideRightScaleOut {
+	to { opacity: 0; -webkit-transform: translateX(200%) scale(.8); }
+}
+@-moz-keyframes slideRightScaleOut {
+	to { opacity: 0; -moz-transform: translateX(200%) scale(.8); }
+}
+@keyframes slideRightScaleOut {
+	to { opacity: 0; transform: translateX(200%) scale(.8); }
+}
+
+/* 14. Slide down + scale */
+
+.slideDownScaleIn {
+	-webkit-animation: slideDownScaleIn .8s both ease;
+	-moz-animation: slideDownScaleIn .8s both ease;
+	animation: slideDownScaleIn .8s both ease;
+}
+@-webkit-keyframes slideDownScaleIn {
+	from { opacity: 0; -webkit-transform: translateY(-200%) scale(.8); }
+}
+@-moz-keyframes slideDownScaleIn {
+	from { opacity: 0; -moz-transform: translateY(-200%) scale(.8); }
+}
+@keyframes slideDownScaleIn {
+	from { opacity: 0; transform: translateY(-200%) scale(.8); }
+}
+.slideDownScaleOut {
+	-webkit-animation: slideDownScaleOut .8s both ease;
+	-moz-animation: slideDownScaleOut .8s both ease;
+	animation: slideDownScaleOut .8s both ease;
+}
+@-webkit-keyframes slideDownScaleOut {
+	to { opacity: 0; -webkit-transform: translateY(-200%) scale(.8); }
+}
+@-moz-keyframes slideDownScaleOut {
+	to { opacity: 0; -moz-transform: translateY(-200%) scale(.8); }
+}
+@keyframes slideDownScaleOut {
+	to { opacity: 0; transform: translateY(-200%) scale(.8); }
+}
+
+/* 15. Slide up + scale */
+
+.slideUpScaleIn {
+	-webkit-animation: slideUpScaleIn .8s both ease;
+	-moz-animation: slideUpScaleIn .8s both ease;
+	animation: slideUpScaleIn .8s both ease;
+}
+@-webkit-keyframes slideUpScaleIn {
+	from { opacity: 0; -webkit-transform: translateY(200%) scale(.8); }
+}
+@-moz-keyframes slideUpScaleIn {
+	from { opacity: 0; -moz-transform: translateY(200%) scale(.8); }
+}
+@keyframes slideUpScaleIn {
+	from { opacity: 0; transform: translateY(200%) scale(.8); }
+}
+.slideUpScaleOut {
+	-webkit-animation: slideUpScaleOut .8s both ease;
+	-moz-animation: slideUpScaleOut .8s both ease;
+	animation: slideUpScaleOut .8s both ease;
+}
+@-webkit-keyframes slideUpScaleOut {
+	to { opacity: 0; -webkit-transform: translateY(200%) scale(.8); }
+}
+@-moz-keyframes slideUpScaleOut {
+	to { opacity: 0; -moz-transform: translateY(200%) scale(.8); }
+}
+@keyframes slideUpScaleOut {
+	to { opacity: 0; transform: translateY(200%) scale(.8); }
+}
+
+/* 16. Slide down + reversed scale */
+
+.slideDownScaleReversedIn {
+	-webkit-animation: slideDownScaleReversedIn .8s both ease;
+	-moz-animation: slideDownScaleReversedIn .8s both ease;
+	animation: slideDownScaleReversedIn .8s both ease;
+}
+@-webkit-keyframes slideDownScaleReversedIn {
+	from { opacity: 0; -webkit-transform: translateY(-170%) scale(1.5); }
+}
+@-moz-keyframes slideDownScaleReversedIn {
+	from { opacity: 0; -moz-transform: translateY(-170%) scale(1.5); }
+}
+@keyframes slideDownScaleReversedIn {
+	from { opacity: 0; transform: translateY(-170%) scale(1.5); }
+}
+.slideDownScaleReversedOut {
+	-webkit-animation: slideDownScaleReversedOut .8s both ease;
+	-moz-animation: slideDownScaleReversedOut .8s both ease;
+	animation: slideDownScaleReversedOut .8s both ease;
+}
+@-webkit-keyframes slideDownScaleReversedOut {
+	to { opacity: 0; -webkit-transform: translateY(-170%) scale(1.5); }
+}
+@-moz-keyframes slideDownScaleReversedOut {
+	to { opacity: 0; -moz-transform: translateY(-170%) scale(1.5); }
+}
+@keyframes slideDownScaleReversedOut {
+	to { opacity: 0; transform: translateY(-170%) scale(1.5); }
+}
+
+/* 17. Slide up + reversed scale */
+
+.slideUpScaleReversedIn {
+	-webkit-animation: slideUpScaleReversedIn .8s both ease;
+	-moz-animation: slideUpScaleReversedIn .8s both ease;
+	animation: slideUpScaleReversedIn .8s both ease;
+}
+@-webkit-keyframes slideUpScaleReversedIn {
+	from { opacity: 0; -webkit-transform: translateY(170%) scale(1.5); }
+}
+@-moz-keyframes slideUpScaleReversedIn {
+	from { opacity: 0; -moz-transform: translateY(170%) scale(1.5); }
+}
+@keyframes slideUpScaleReversedIn {
+	from { opacity: 0; transform: translateY(170%) scale(1.5); }
+}
+.slideUpScaleReversedOut {
+	-webkit-animation: slideUpScaleReversedOut .8s both ease;
+	-moz-animation: slideUpScaleReversedOut .8s both ease;
+	animation: slideUpScaleReversedOut .8s both ease;
+}
+@-webkit-keyframes slideUpScaleReversedOut {
+	to { opacity: 0; -webkit-transform: translateY(170%) scale(1.5); }
+}
+@-moz-keyframes slideUpScaleReversedOut {
+	to { opacity: 0; -moz-transform: translateY(170%) scale(1.5); }
+}
+@keyframes slideUpScaleReversedOut {
+	to { opacity: 0; transform: translateY(170%) scale(1.5); }
+}
+
+/* Mobiles */
+
+.mobileFadeIn {
+	-webkit-animation: mobileFadeIn .5s ease both;
+	-moz-animation: mobileFadeIn .5s ease both;
+	animation: mobileFadeIn .5s ease both;
+}
+	@-webkit-keyframes mobileFadeIn {
+		from { opacity: 0; }
+	}
+	@-moz-keyframes mobileFadeIn {
+		from { opacity: 0; }
+	}
+	@keyframes mobileFadeIn {
+		from { opacity: 0; }
+	}
+.mobileFadeOut {
+	-webkit-animation: mobileFadeOut .7s ease both;
+	-moz-animation: mobileFadeOut .7s ease both;
+	animation: mobileFadeOut .7s ease both;
+}
+	@-webkit-keyframes mobileFadeOut {
+		to { opacity: 0; }
+	}
+	@-moz-keyframes mobileFadeOut {
+		to { opacity: 0; }
+	}
+	@keyframes mobileFadeOut {
+		to { opacity: 0; }
+	}
+
+
+
+
+
+/*  _______________________________________________
+
+    05 ICONS
+    _______________________________________________  */
+
+
+
+
+
+@font-face {
+	font-family: 'icomoon';
+	src:url('../fonts/icomoon.eot?-1176qs');
+	src:url('../fonts/icomoon.eot?#iefix-1176qs') format('embedded-opentype'),
+		url('../fonts/icomoon.woff?-1176qs') format('woff'),
+		url('../fonts/icomoon.ttf?-1176qs') format('truetype'),
+		url('../fonts/icomoon.svg?-1176qs#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-home:before {
+	content: "\e600";
+}
+.icon-image:before {
+	content: "\e601";
+}
+.icon-file:before {
+	content: "\e602";
+}
+.icon-play:before {
+	content: "\e603";
+}
+.icon-tag:before {
+	content: "\e604";
+}
+.icon-cart:before {
+	content: "\e605";
+}
+.icon-support:before {
+	content: "\e606";
+}
+.icon-phone:before {
+	content: "\e607";
+}
+.icon-location:before {
+	content: "\e608";
+}
+.icon-screen:before {
+	content: "\e609";
+}
+.icon-bubble:before {
+	content: "\e60a";
+}
+.icon-users:before {
+	content: "\e60b";
+}
+.icon-search:before {
+	content: "\e60c";
+}
+.icon-lock:before {
+	content: "\e60d";
+}
+.icon-cog:before {
+	content: "\e60e";
+}
+.icon-bookmark:before {
+	content: "\e60f";
+}
+.icon-cloud:before {
+	content: "\e610";
+}
+.icon-heart:before {
+	content: "\e611";
+}
+.icon-star:before {
+	content: "\e612";
+}
+.icon-close:before {
+	content: "\e613";
+}
+.icon-checkmark:before {
+	content: "\e614";
+}
+.icon-facebook:before {
+	content: "\e615";
+}
+.icon-twitter:before {
+	content: "\e616";
+}
+.icon-vimeo:before {
+	content: "\e617";
+}
+.icon-flickr:before {
+	content: "\e618";
+}
+.icon-arrow-up:before {
+	content: "\e619";
+}
+.icon-arrow-right:before {
+	content: "\e61a";
+}
+.icon-arrow-left:before {
+	content: "\e61b";
+}
+.icon-arrow-down:before {
+	content: "\e61c";
+}
+
+
+
+
+
+
+
+
+
+

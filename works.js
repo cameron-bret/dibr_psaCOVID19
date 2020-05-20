@@ -61,30 +61,9 @@ $(document).ready(function() {
 
 //Sticky Transparent Nav
 
-//  $(document).ready(function() {
-//             $(".menu-icon").on("click", function() {
-//                   $("nav").toggleClass("showing");
-//             });
-//       });
-
-// Scrolling Effect
-
-// $(window).on("scroll", function() {
-//       if($(window).scrollTop()) {
-//             $('nav').addClass('red');
-//       }
-
-//       else {
-//             $('nav').removeClass('red');
-// 			}
-// })
-
-// Scrolling Effect 2
-
-// $(function () {
-//   $(document).scroll(function () {
-//     var $nav = $(".trial");
-//     $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
-//   });
-// });
+ $(document).ready(function() {
+            $(".menu-icon").on("click", function() {
+                  $("nav").toggleClass("showing");
+            });
+      });
 
