@@ -443,9 +443,9 @@ TABLE OF CONTENTS
 /* 1. Fade in & out */
 
 .fadeIn {
-	-webkit-animation: fadeIn .5s ease both;
-	-moz-animation: fadeIn .5s ease both;
-	animation: fadeIn .5s ease both;
+	-webkit-animation: fadeIn .3s ease both;
+	-moz-animation: fadeIn .3s ease both;
+	animation: fadeIn .3s ease both;
 }
 	@-webkit-keyframes fadeIn {
 		from { opacity: 0; }
@@ -457,9 +457,9 @@ TABLE OF CONTENTS
 		from { opacity: 0; }
 	}
 .fadeOut {
-	-webkit-animation: fadeOut .5s ease both;
-	-moz-animation: fadeOut .5s ease both;
-	animation: fadeOut .5s ease both;
+	-webkit-animation: fadeOut .3s ease both;
+	-moz-animation: fadeOut .3s ease both;
+	animation: fadeOut .3s ease both;
 }
 	@-webkit-keyframes fadeOut {
 		to { opacity: 0; }
