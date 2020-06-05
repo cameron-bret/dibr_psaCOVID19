@@ -66,6 +66,24 @@ nav.red {
   background: #ee2a24;
 }
 
+/* video gallery */
+
+.videoGallery {
+  /* border: black solid; */
+  background-color: #b8d8e5;
+  /* padding: 50px; */
+  margin: 0 auto;
+}
+
+.videoItem {
+  margin-top: 15px;
+}
+
+.videoDownloadButton {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
 /* appearing header  */
 
 
@@ -203,6 +221,32 @@ a {
   }
 
   .image2{
+    display: none;
+  }
+}
+
+.image3{
+  display: none;
+}
+
+@media only screen and (max-width: 768px){
+  .image1{
+    display: none;
+  }
+
+  .image3{
+    display: inline-block;
+    margin-left: 220px;
+    margin-right: 197px;
+  }
+}
+
+@media only screen and (min-width: 768px){ 
+  .image1{
+    display: block;
+  }
+
+  .image3{
     display: none;
   }
 }
